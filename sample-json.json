@@ -1,0 +1,1807 @@
+    {
+        "jsfile": "./index.js",
+        "items": [
+            {
+                "id": 1,
+                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/searchSR",
+                "method": "POST",
+                "params": [],
+                "request": {
+                    "requestHeader": {
+                        "clientContext": {
+                            "pointOfSale": "Website",
+                            "clientID": "B2BCLIENT1213",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR",
+                            "clientNationality": "Indian"
+                        },
+                        "sessionID": "19:04:26:15:42:51:104",
+                        "userID": "CLIENTUSER3355",
+                        "transactionID": ""
+                    },
+                    "requestBody": {
+                        "accommodationSubTypes": [
+                            "Hotel",
+                            "Motel"
+                        ],
+                        "countryCode": "US",
+                        "cityCode": "USA-NWYR000",
+                        "hotelCode": "",
+                        "checkIn": "2019-05-10",
+                        "checkOut": "2019-05-11",
+                        "paxNationality": "US",
+                        "roomConfig": [
+                            {
+                                "adultCount": 1,
+                                "childAges": []
+                            }
+                        ]
+                    }
+                },
+                "response": {
+                    "responseBody": {
+                        "accommodationInfo": [
+                            {
+                                "roomStay": [
+                                    {
+                                        "availableUnits": 5,
+                                        "supplierRef": "SUPP100133|SUPPCRED180|0|",
+                                        "payAtHotel": true,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": true,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 64.9,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "currencyCode": ""
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 9.9,
+                                                    "companyTax": [
+                                                        {
+                                                            "amount": 9.9,
+                                                            "hsnCode": 9970,
+                                                            "taxComponent": "SellingPrice",
+                                                            "sacCode": 9970,
+                                                            "taxPercent": 18,
+                                                            "taxCode": "IGST",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 64.9,
+                                                        "taxes": {
+                                                            "amount": 0,
+                                                            "currencyCode": "INR"
+                                                        },
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-05-10"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [
+                                            {
+                                                "minOccupancy": "",
+                                                "paxType": "",
+                                                "maxAge": "",
+                                                "minAge": "",
+                                                "maxOccupancy": 1
+                                            }
+                                        ],
+                                        "freeCancellationTill": "",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": ""
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO72918",
+                                                "hotelName": "Doubletree by Hilton Bristol",
+                                                "hotelRef": ""
+                                            },
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": 9,
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "En-Suite-Double",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": 201905031583699
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "6423909|6423909-6423909",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "responseHeader": {
+                        "clientContext": {
+                            "pointOfSale": "Website",
+                            "clientID": "B2BCLIENT1213",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR"
+                        },
+                        "password": "",
+                        "sessionID": "19:04:26:15:42:51:104",
+                        "userID": "CLIENTUSER3355",
+                        "transactionID": "B2BB2BCLIENT1213190506124217254"
+                    }
+                },
+                "properties": [
+                    {
+                        "name": "requestBody.checkIn",
+                        "type": 1
+                    },
+                    {
+                        "name": "requestBody.checkOut",
+                        "type": 1
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/searchSR",
+                "method": "POST",
+                "params": [],
+                "request": {
+                    "requestBody": {
+                        "accommodationInfo": [
+                            {
+                                "accommodationSubType": "Hotel",
+                                "roomConfig": [
+                                    {
+                                        "adultCount": 1,
+                                        "childAges": [],
+                                        "supplierRef": "SUPP339|SUPPCRED119|0|",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "BED & BREAKFAST",
+                                                "mealCode": "BB"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO42377",
+                                                "hotelName": "Element New York Times Square West",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "SG",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "Guest room 1 King",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190620-9223372036835609577"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "BB",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        },
+                                        "itemId": 1,
+                                        "selectedRoomsCount": 1
+                                    },
+                                    {
+                                        "adultCount": 1,
+                                        "childAges": [],
+                                        "supplierRef": "SUPP339|SUPPCRED119|0|",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "BED & BREAKFAST",
+                                                "mealCode": "BB"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO42377",
+                                                "hotelName": "Element New York Times Square West",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "SG",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "Guest room 1 King",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190620-9223372036835609577"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "BB",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 2
+                                        },
+                                        "itemId": 2,
+                                        "selectedRoomsCount": 1
+                                    }
+                                ],
+                                "isTimeLimit": false,
+                                "countryCode": "91",
+                                "cityCode": "USA-NWYR000",
+                                "hotelCode": "",
+                                "checkIn": "2019-06-20",
+                                "checkOut": "2019-06-21",
+                                "paxNationality": "IN"
+                            }
+                        ]
+                    },
+                    "requestHeader": {
+                        "clientContext": {
+                            "pointOfSale": "API",
+                            "clientId": "B2BCLIENT511",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR",
+                            "clientID": "B2BCLIENT511"
+                        },
+                        "password": "",
+                        "sessionID": "ed093f6a-afb2-4ac2-a192-6dc10b788bde",
+                        "userID": "CLIENTUSER871",
+                        "transactionID": "B2BB2BCLIENT511190620161142499",
+                        "sessionId": "ed093f6a-afb2-4ac2-a192-6dc10b788bde",
+                        "transactionId": "B2BB2BCLIENT511190620161142499",
+                        "pointOfSale": "API",
+                        "userId": "CLIENTUSER871"
+                    }
+                },
+                "response": {
+                    "responseBody": {
+                        "accommodationInfo": [
+                            {
+                                "roomStay": [
+                                    {
+                                        "supplierOffers": [],
+                                        "supplierRef": "SUPP85|SUPPCRED55|0|",
+                                        "payAtHotel": false,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": false,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 11866.19,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11866.19,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [],
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": "SA"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO105490",
+                                                "hotelName": "Z NYC Hotel",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [
+                                                {
+                                                    "refName": "tlgxRoomId",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomName",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomCategory",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelId",
+                                                    "refValue": "ACCO105490",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoName",
+                                                    "refValue": "Z NYC Hotel",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelMapped",
+                                                    "refValue": "N",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "NonRefundable",
+                                                    "refValue": "false",
+                                                    "refCode": ""
+                                                },
+                                                {
+                                                    "refName": "code",
+                                                    "refValue": "6297",
+                                                    "refCode": ""
+                                                }
+                                            ],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "6297",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "1#6297",
+                                                "roomTypeName": "Room",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190608-9223372036836590087"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "CgcxNzg0NzQ2EgJTQRoKMDgvMDYvMjAxOSIKMDkvMDYvMjAxOSoLTWVyY2hhbnRQYXkyA1VTRDoSCgNVU0QSBjE3MS41MiIDMC4wQhYKBj6EjNjI5NxABGgQ2Mjk3IgQzMC0zSg8KATESBAgeEAESBAgDEAJSRwoIaWRPcGNpb24SOzE3ODQ3NDZ8MjAxOTA2MDh8MXwzMC0zfEVTfFNBfFB8VE9VfDB8fHx8TXxIfDEyMzkwNDNM8NjI5N3x8Ug0KCGNvZENhY2hlEgEwWgYxLjEzNDNiFjIwMTktMDYtMDhUMDE6MDU6MDIuMjdoAXISCJP+1saA7fuPhAEQ9Oz9BRg0enUKFQoDOTYwEg4KA1VTRBACGgUxNAy4xNQoVCgM1NzYSDgoDVVNEEAIaBTQyLjg4ChUKAzM2MBIOCgNVU0QQAhoFODUuNzYKFgoDMjQwEg8KA1VTRBACGgYxMjguNjQKFgoDMTIwEg8KA1VTRBACGgYxNzEuNTKCAQNUT1WSAQJFU5oBAggEwgEBMNIBATLaAQVQPSNMPeIBBUFWQUlM8gEcMi4zMTQ2NDIyMDEzNDI3NjcwODIwMDQ2NDE0N/oBEzIwMTktMDYtMDggMTM6NDg6MTeKAj88MzQ3NyMrMC42IFsyMjRdKy0wLjYgWzQ2ODRdKy01LjAgWzQ3NzhdKy0xLjAgWzQ2ODNdKzEuMCBbMjI2XT6SAgMxLjWaAgMwLjCiAgMwLjDCAgQzNDc3ygIBMNoCAVD6Ahw1LjgxNDY0MjIwMTM0Mjc2NzA4MjAwNDY0MTQ3ggMDMC4w",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        }
+                                    },
+                                    {
+                                        "offerDetailsSet": [
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Free",
+                                                "offerName": "OFF113",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS243",
+                                                "offerSubType": "Free Upgrades",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "OFF113",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Voucher / Gift Cards/ Offer Codes",
+                                                "offerName": "OFF152",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS216",
+                                                "offerSubType": "Promocode",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "Offer 152",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Free",
+                                                "offerName": "OFF115",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS245",
+                                                "offerSubType": "Free Upgrades",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "OFF115",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Free",
+                                                "offerName": "OFF114",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS244",
+                                                "offerSubType": "Free Upgrades",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "OFF114",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "calculationType": "percentage and amount",
+                                                "longDescription": "null",
+                                                "amount": 0,
+                                                "offerName": "OFF144",
+                                                "offerApplicability": "withoutredemption",
+                                                "shortDescription": "Offer 144",
+                                                "offerValue": "Fixed",
+                                                "paymentOffer": false,
+                                                "offerType": "Voucher / Gift Cards/ Offer Codes",
+                                                "percentage": 5,
+                                                "offerID": "COFFERS213",
+                                                "offerSubType": "Promocode",
+                                                "offerAmount": 560.634,
+                                                "currency": "INR"
+                                            }
+                                        ],
+                                        "supplierOffers": [],
+                                        "supplierRef": "SUPP85|SUPPCRED55|0|",
+                                        "payAtHotel": false,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": true,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS216",
+                                                            "discountType": "Voucher / Gift Cards/ Offer Codes",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 10974.172,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": -560.634,
+                                                    "discount": [
+                                                        {
+                                                            "amount": -560.634,
+                                                            "discountCode": "COFFERS213",
+                                                            "discountType": "Voucher / Gift Cards/ Offer Codes",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 10974.172,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS245",
+                                                            "discountType": "Free",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS244",
+                                                            "discountType": "Free",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS243",
+                                                            "discountType": "Free",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [],
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": "SA"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO105490",
+                                                "hotelName": "Z NYC Hotel",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [
+                                                {
+                                                    "refName": "tlgxRoomId",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomName",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomCategory",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelId",
+                                                    "refValue": "ACCO105490",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoName",
+                                                    "refValue": "Z NYC Hotel",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelMapped",
+                                                    "refValue": "N",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "NonRefundable",
+                                                    "refValue": "true",
+                                                    "refCode": ""
+                                                },
+                                                {
+                                                    "refName": "code",
+                                                    "refValue": "6297",
+                                                    "refCode": ""
+                                                }
+                                            ],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "6297",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "1#6297",
+                                                "roomTypeName": "Room",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190608-9223372036836590084"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "CgcxNzg0NzQ2EgJTQRoKMDgvMDYvMjAxOSIKMDkvMDYvMjAxOSoLTWVyY2hhbnRQYXkyA1VTRDoSCgNVU0QSBjE2Ni43MyIDMC4wQhYKBjaEjNjI5NxABGgQ2Mjk3IgQzMC0zSg8KATESBAgeEAESBAgDEAJSSQoIaWRPcGNpb24SPTE3ODQ3NDZ8MjAxOTA2MDh8MXwzMC0zfEVTfFNBfEh8SE9CVjJTfDF8fHx8TXxIfDE1Mzgg5MXw2Mjk3fHxSDQoIY29kQ2FjaGUSATBaBjEuMTM0M2IWMjAxOS0wNi0wOFQwMTowNTowMi4yN2gBchEI7s2fpf2T+oNtENHrkwYYNHoCEAGCAQZIT0JWMlOSAQJFU5oBAcMIBATDSAQEy2gEFUD0jTD3iAQVBVkFJTPIBHDIuMzgxMTAzMDM2NTg3ODU2MzQ3NTIzOTA4OTT6ARMyMDE5LTA2LTA4IDEzOjQ4OjE3igI/PDM0NzcjKzAuNiBbMjI0XSstMS4wIFs0Njg1XSstMC42IFs0Njg0XSstNS4wIFs0Nzc4XSsxLjAgWzIyN10+kgIDMS41mgIDMC4wogIDMC4wwgIEMzQ3N8oCATD6Ahw1Ljg4MTEwMzAzNjU4Nzg1NjM0NzUyMzkwODk0ggMDMC4w",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        }
+                                    },
+                                    {
+                                        "supplierOffers": [],
+                                        "supplierRef": "SUPP85|SUPPCRED55|0|",
+                                        "payAtHotel": false,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": false,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 11866.19,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11866.19,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [],
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": "SA"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO105490",
+                                                "hotelName": "Z NYC Hotel",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [
+                                                {
+                                                    "refName": "tlgxRoomId",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomName",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomCategory",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelId",
+                                                    "refValue": "ACCO105490",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoName",
+                                                    "refValue": "Z NYC Hotel",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelMapped",
+                                                    "refValue": "N",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "NonRefundable",
+                                                    "refValue": "false",
+                                                    "refCode": ""
+                                                },
+                                                {
+                                                    "refName": "code",
+                                                    "refValue": "6297",
+                                                    "refCode": ""
+                                                }
+                                            ],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "6297",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "1#6297",
+                                                "roomTypeName": "Room",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190608-9223372036836590086"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "CgcxNzg0NzQ2EgJTQRoKMDgvMDYvMjAxOSIKMDkvMDYvMjAxOSoLTWVyY2hhbnRQYXkyA1VTRDoSCgNVU0QSBjE3MS41MiIDMC4wQhYKBjEEjNjI5NxABGgQ2Mjk3IgQzMC0ySg8KATESBAgeEAESBAgCEAJSRwoIaWRPcGNpb24SOzE3ODQ3NDZ8MjAxOTA2MDh8MXwzMC0yfEVTfFNBfFB8VE9VfDB8fHx8TXxIfDEyMzkwNDNV8NjI5N3x8Ug0KCGNvZENhY2hlEgEwWgYxLjEzNDNiFjIwMTktMDYtMDhUMDE6MDU6MDIuMjdoAXISCJP+1saA7fuPhAEQ9Oz9BRg0enUKFQoDOTYwEg4KA1VTRBACGgUxNcy4xNQoVCgM1NzYSDgoDVVNEEAIaBTQyLjg4ChUKAzM2MBIOCgNVU0QQAhoFODUuNzYKFgoDMjQwEg8KA1VTRBACGgYxMjguNjQKFgoDMTIwEg8KA1VTRBACGgYxNzEuNTKCAQNUT1WSAQJFU5oBAggEwgEBMNIBATLaAQVQPSNMPeIBBUFWQUlM8gEcMi4zMTQ2NDIyMDEzNDI3NjcwODIwMDQ2NDE0N/oBEzIwMTktMDYtMDggMTM6NDg6MjSKAj88MzQ3NyMrLTEuMCBbNDY4M10rMS4wIFsyMjZdKy0wLjYgWzQ2ODRdKy01LjAgWzQ3NzhdKzAuNiBbMjI0XT6SAgMxLjWaAgMwLjCiAgMwLjDCAgQzNDc3ygIBMNoCAVD6Ahw1LjgxNDY0MjIwMTM0Mjc2NzA4MjAwNDY0MTQ3ggMDMC4w",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 2
+                                        }
+                                    },
+                                    {
+                                        "offerDetailsSet": [
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Free",
+                                                "offerName": "OFF113",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS243",
+                                                "offerSubType": "Free Upgrades",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "OFF113",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Voucher / Gift Cards/ Offer Codes",
+                                                "offerName": "OFF152",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS216",
+                                                "offerSubType": "Promocode",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "Offer 152",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Free",
+                                                "offerName": "OFF115",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS245",
+                                                "offerSubType": "Free Upgrades",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "OFF115",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "longDescription": "null",
+                                                "offerType": "Free",
+                                                "offerName": "OFF114",
+                                                "offerApplicability": "withoutredemption",
+                                                "offerID": "COFFERS244",
+                                                "offerSubType": "Free Upgrades",
+                                                "offerAmount": 0,
+                                                "currency": "INR",
+                                                "shortDescription": "OFF114",
+                                                "offerValue": "Last-3-digits",
+                                                "paymentOffer": true
+                                            },
+                                            {
+                                                "calculationType": "percentage and amount",
+                                                "longDescription": "null",
+                                                "amount": 0,
+                                                "offerName": "OFF144",
+                                                "offerApplicability": "withoutredemption",
+                                                "shortDescription": "Offer 144",
+                                                "offerValue": "Fixed",
+                                                "paymentOffer": false,
+                                                "offerType": "Voucher / Gift Cards/ Offer Codes",
+                                                "percentage": 5,
+                                                "offerID": "COFFERS213",
+                                                "offerSubType": "Promocode",
+                                                "offerAmount": 560.634,
+                                                "currency": "INR"
+                                            }
+                                        ],
+                                        "supplierOffers": [],
+                                        "supplierRef": "SUPP85|SUPPCRED55|0|",
+                                        "payAtHotel": false,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": true,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS216",
+                                                            "discountType": "Voucher / Gift Cards/ Offer Codes",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 10974.172,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": -560.634,
+                                                    "discount": [
+                                                        {
+                                                            "amount": -560.634,
+                                                            "discountCode": "COFFERS213",
+                                                            "discountType": "Voucher / Gift Cards/ Offer Codes",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 10974.172,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS245",
+                                                            "discountType": "Free",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS244",
+                                                            "discountType": "Free",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "amount": 11534.806,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "discount": [
+                                                        {
+                                                            "amount": 0,
+                                                            "discountCode": "COFFERS243",
+                                                            "discountType": "Free",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 0,
+                                                    "companyTax": [],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {},
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 11534.806,
+                                                        "taxes": {},
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-06-08"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [],
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": "SA"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO105490",
+                                                "hotelName": "Z NYC Hotel",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [
+                                                {
+                                                    "refName": "tlgxRoomId",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomName",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoRoomCategory",
+                                                    "refValue": "",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelId",
+                                                    "refValue": "ACCO105490",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxAccoName",
+                                                    "refValue": "Z NYC Hotel",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "tlgxHotelMapped",
+                                                    "refValue": "N",
+                                                    "refCode": "16"
+                                                },
+                                                {
+                                                    "refName": "NonRefundable",
+                                                    "refValue": "true",
+                                                    "refCode": ""
+                                                },
+                                                {
+                                                    "refName": "code",
+                                                    "refValue": "6297",
+                                                    "refCode": ""
+                                                }
+                                            ],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "6297",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "1#6297",
+                                                "roomTypeName": "Room",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190608-9223372036836590085"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "CgcxNzg0NzQ2EgJTQRoKMDgvMDYvMjAxOSIKMDkvMDYvMjAxOSoLTWVyY2hhbnRQYXkyA1VTRDoSCgNVU0QSBjE2Ni43MyIDMC4wQhYKBjIEjNjI5NxABGgQ2Mjk3IgQzMC0ySg8KATESBAgeEAESBAgCEAJSSAoIaWRPcGNpb24SPDE3ODQ3NDZ8MjAxOTA2MDh8MXwzMC0yfEVTfFNBfEh8SE9CVjJ8MXx8fHxNfEh8MTUzODkVxfDYyOTd8fFINCghjb2RDYWNoZRIBMFoGMS4xMzQzYhYyMDE5LTA2LTA4VDAxOjA1OjAyLjI3aAFyEQjuzZ+l/ZP6g20Q0euTBhg0egIQAYIBBUhPQlYykgECRVOaAQDCAvQEw0gEBMtoBBVA9I0w94gEFQVZBSUzyARwyLjM4MTEwMzAzNjU4Nzg1NjM0NzUyMzkwODk0+gETMjAxOS0wNi0wOCAxMzo0ODoyNIoCPzwzNDc3IystMS4wIFs0Njg1XSstMC42IFs0Njg0XSstNS4wIFs0Nzc4XSsxLjAgWzIyN10rMC42IFsyMjRdPpICAzEuNZoCAzAuMKICAzAuMMICBDM0NzfKAgEw+gIcNS44ODExMDMwMzY1ODc4NTYzNDc1MjM5MDg5NIIDAzAuMA==",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "responseHeader": {
+                        "clientContext": {
+                            "pointOfSale": "API",
+                            "clientID": "B2BCLIENT511",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR"
+                        },
+                        "password": "",
+                        "sessionID": "6e2f0ccb-4424-4aed-ac07-a50f820b1482",
+                        "userID": "raju.singh@altudo.co",
+                        "transactionID": "B2BB2BCLIENT511190608171509001"
+                    }
+                },
+                "properties": [
+                    {
+                        "name": "requestHeader",
+                        "type": 2,
+                        "source": "1.response.responseHeader"
+                    },
+                    {
+                        "name": "requestBody.accommodationInfo",
+                        "type": 3,
+                        "funcArguments": {
+                            "total": 2,
+                            "args": [
+                                "1.request.requestBody",
+                                "1.response.responseBody.accommodationInfo"
+                            ]
+                        },
+                        "source": "priceReqBody"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/repriceSR",
+                "method": "POST",
+                "params": [],
+                "request": {
+                    "requestHeader": {
+                        "clientContext": {
+                            "pointOfSale": "Website",
+                            "clientID": "B2BCLIENT1213",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR",
+                            "clientNationality": "Indian"
+                        },
+                        "sessionID": "19:04:26:15:42:51:104",
+                        "userID": "CLIENTUSER3355",
+                        "transactionID": ""
+                    },
+                    "requestBody": {
+                        "accommodationInfo": [
+                            {
+                                "accommodationSubType": "Hotel",
+                                "roomConfig": [
+                                    {
+                                        "adultCount": 1,
+                                        "childAges": [],
+                                        "supplierRef": "SUPP339|SUPPCRED119|0|",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "BED & BREAKFAST",
+                                                "mealCode": "BB"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO42377",
+                                                "hotelName": "Element New York Times Square West",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "SG",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "Guest room 1 King",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190620-9223372036835609577"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "BB",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        },
+                                        "itemId": 1,
+                                        "selectedRoomsCount": 1
+                                    },
+                                    {
+                                        "adultCount": 1,
+                                        "childAges": [],
+                                        "supplierRef": "SUPP339|SUPPCRED119|0|",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "BED & BREAKFAST",
+                                                "mealCode": "BB"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO42377",
+                                                "hotelName": "Element New York Times Square West",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "SG",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "Guest room 1 King",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190620-9223372036835609577"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "BB",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 2
+                                        },
+                                        "itemId": 2,
+                                        "selectedRoomsCount": 1
+                                    }
+                                ],
+                                "isTimeLimit": false,
+                                "countryCode": "91",
+                                "cityCode": "USA-NWYR000",
+                                "hotelCode": "",
+                                "checkIn": "2019-06-20",
+                                "checkOut": "2019-06-21",
+                                "paxNationality": "IN"
+                            }
+                        ]
+                    }
+                },
+                "response": {
+                    "responseBody": {
+                        "accommodationInfo": [
+                            {
+                                "roomStay": [
+                                    {
+                                        "availableUnits": 5,
+                                        "supplierRef": "SUPP100133|SUPPCRED180|0|",
+                                        "payAtHotel": true,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": true,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 64.9,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "currencyCode": ""
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 9.9,
+                                                    "companyTax": [
+                                                        {
+                                                            "amount": 9.9,
+                                                            "hsnCode": 9970,
+                                                            "taxComponent": "SellingPrice",
+                                                            "sacCode": 9970,
+                                                            "taxPercent": 18,
+                                                            "taxCode": "IGST",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 64.9,
+                                                        "taxes": {
+                                                            "amount": 0,
+                                                            "currencyCode": "INR"
+                                                        },
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-05-10"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [
+                                            {
+                                                "minOccupancy": "",
+                                                "paxType": "",
+                                                "maxAge": "",
+                                                "minAge": "",
+                                                "maxOccupancy": 1
+                                            }
+                                        ],
+                                        "freeCancellationTill": "",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": ""
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO72918",
+                                                "hotelName": "Doubletree by Hilton Bristol",
+                                                "hotelRef": ""
+                                            },
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": 9,
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "En-Suite-Double",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": 201905031583699
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "6423909|6423909-6423909",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "responseHeader": {
+                        "clientContext": {
+                            "pointOfSale": "Website",
+                            "clientID": "B2BCLIENT1213",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR"
+                        },
+                        "password": "",
+                        "sessionID": "19:04:26:15:42:51:104",
+                        "userID": "CLIENTUSER3355",
+                        "transactionID": "B2BB2BCLIENT1213190506124217254"
+                    }
+                },
+                "properties": [
+                    {
+                        "name": "requestHeader",
+                        "type": 2,
+                        "source": "2.response.responseHeader"
+                    },
+                    {
+                        "name": "requestBody.accommodationInfo",
+                        "type": 3,
+                        "funcArguments": {
+                            "total": 2,
+                            "args": [
+                                "2.request.requestBody",
+                                "2.response.responseBody.accommodationInfo"
+                            ]
+                        },
+                        "source": "priceReqBody"
+                    }
+                ],
+                "afterResponse":{
+                    "name": "After Response",
+                    "type": 3,
+                    "funcArguments": {
+                        "total": 2,
+                        "args": [
+                            "4.response"                            
+                        ]
+                    },
+                    "source": "bookResponse"
+                }
+            },
+            {
+                "id": 4,
+                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/bookSR",
+                "method": "POST",
+                "params": [],
+                "request": {
+                    "requestHeader": {
+                        "clientContext": {
+                            "pointOfSale": "Website",
+                            "clientID": "B2BCLIENT1213",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR",
+                            "clientNationality": "Indian"
+                        },
+                        "sessionID": "19:04:26:15:42:51:104",
+                        "userID": "CLIENTUSER3355",
+                        "transactionID": ""
+                    },
+                    "requestBody": {
+                        "accommodationInfo": [
+                            {
+                                "accommodationSubType": "Hotel",
+                                "roomConfig": [
+                                    {
+                                        "adultCount": 1,
+                                        "childAges": [],
+                                        "supplierRef": "SUPP339|SUPPCRED119|0|",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "BED & BREAKFAST",
+                                                "mealCode": "BB"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO42377",
+                                                "hotelName": "Element New York Times Square West",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "SG",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "Guest room 1 King",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190620-9223372036835609577"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "BB",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        },
+                                        "paxInfo": [
+                                            {
+                                                "documentDetails": {
+                                                    "documentInfo": [
+                                                        {
+                                                            "expiryDate": "2020-12-12",
+                                                            "nationality": "Indian",
+                                                            "docNumber": "AEEE11113",
+                                                            "docType": "PAN Card",
+                                                            "issueCountry": "India",
+                                                            "issueAuthority": "Govt. of India",
+                                                            "effectiveDate": "2010-12-12",
+                                                            "issueLocation": "Mumbai"
+                                                        }
+                                                    ]
+                                                },
+                                                "isLeadPax": true,
+                                                "firstName": "PRITISH",
+                                                "paxType": "ADT",
+                                                "surname": "JOSHI",
+                                                "dob": "1990-01-01",
+                                                "middleName": "travelogixx",
+                                                "addressDetails": {
+                                                    "zip": "400063",
+                                                    "country": "IN",
+                                                    "city": "Mumbai",
+                                                    "addrLine2": "addrLine2",
+                                                    "addrLine1": "addrLine1",
+                                                    "state": "Maharashtra"
+                                                },
+                                                "title": "Mr.",
+                                                "contactDetails": [
+                                                    {
+                                                        "contactInfo": {
+                                                            "countryCode": "+91",
+                                                            "contactType": "WORK",
+                                                            "mobileNo": "9800000000",
+                                                            "email": "xyz@gmail.com"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "itemId": 1,
+                                        "selectedRoomsCount": 1
+                                    },
+                                    {
+                                        "adultCount": 1,
+                                        "childAges": [],
+                                        "supplierRef": "SUPP339|SUPPCRED119|0|",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "BED & BREAKFAST",
+                                                "mealCode": "BB"
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO42377",
+                                                "hotelName": "Element New York Times Square West",
+                                                "hotelRef": ""
+                                            },
+                                            "references": [],
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": "SG",
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "Guest room 1 King",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": "20190620-9223372036835609577"
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "BB",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 2
+                                        },
+                                        "paxInfo": [
+                                            {
+                                                "documentDetails": {
+                                                    "documentInfo": [
+                                                        {
+                                                            "expiryDate": "2020-12-12",
+                                                            "nationality": "Indian",
+                                                            "docNumber": "AEEE11113",
+                                                            "docType": "PAN Card",
+                                                            "issueCountry": "India",
+                                                            "issueAuthority": "Govt. of India",
+                                                            "effectiveDate": "2010-12-12",
+                                                            "issueLocation": "Mumbai"
+                                                        }
+                                                    ]
+                                                },
+                                                "isLeadPax": true,
+                                                "firstName": "PRITISH",
+                                                "paxType": "ADT",
+                                                "surname": "JOSHI",
+                                                "dob": "1990-01-01",
+                                                "middleName": "travelogixx",
+                                                "addressDetails": {
+                                                    "zip": "400063",
+                                                    "country": "IN",
+                                                    "city": "Mumbai",
+                                                    "addrLine2": "addrLine2",
+                                                    "addrLine1": "addrLine1",
+                                                    "state": "Maharashtra"
+                                                },
+                                                "title": "Mr.",
+                                                "contactDetails": [
+                                                    {
+                                                        "contactInfo": {
+                                                            "countryCode": "+91",
+                                                            "contactType": "WORK",
+                                                            "mobileNo": "9800000000",
+                                                            "email": "xyz@gmail.com"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "itemId": 2,
+                                        "selectedRoomsCount": 1
+                                    }
+                                ],
+                                "isTimeLimit": false,
+                                "countryCode": "91",
+                                "cityCode": "USA-NWYR000",
+                                "hotelCode": "",
+                                "checkIn": "2019-06-20",
+                                "checkOut": "2019-06-21",
+                                "paxNationality": "IN"
+                            }
+                        ],
+                        "paymentInfo": [
+                            {
+                                "totalAmount": 3000.0,
+                                "amountPaid": 0.0,
+                                "accountType": "Credit",
+                                "paymentAmount": 0.0,
+                                "noOfProducts": 0
+                            }
+                        ]
+                    }
+                },
+                "response": {
+                    "responseBody": {
+                        "accommodationInfo": [
+                            {
+                                "roomStay": [
+                                    {
+                                        "availableUnits": 5,
+                                        "supplierRef": "SUPP100133|SUPPCRED180|0|",
+                                        "payAtHotel": true,
+                                        "accommodationSubType": "Hotel",
+                                        "isRecommended": true,
+                                        "totalPriceInfo": [
+                                            {
+                                                "amount": 64.9,
+                                                "incentives": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "discounts": {
+                                                    "amount": 0,
+                                                    "currencyCode": ""
+                                                },
+                                                "companyTaxes": {
+                                                    "amount": 9.9,
+                                                    "companyTax": [
+                                                        {
+                                                            "amount": 9.9,
+                                                            "hsnCode": 9970,
+                                                            "taxComponent": "SellingPrice",
+                                                            "sacCode": 9970,
+                                                            "taxPercent": 18,
+                                                            "taxCode": "IGST",
+                                                            "currencyCode": "INR"
+                                                        }
+                                                    ],
+                                                    "currencyCode": "INR"
+                                                },
+                                                "taxes": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "receivables": {
+                                                    "amount": 0,
+                                                    "currencyCode": "INR"
+                                                },
+                                                "currencyCode": "INR",
+                                                "nightlyPriceInfo": [
+                                                    {
+                                                        "amount": 64.9,
+                                                        "taxes": {
+                                                            "amount": 0,
+                                                            "currencyCode": "INR"
+                                                        },
+                                                        "currencyCode": "INR",
+                                                        "effectiveDate": "2019-05-10"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "occupancyInfo": [
+                                            {
+                                                "minOccupancy": "",
+                                                "paxType": "",
+                                                "maxAge": "",
+                                                "minAge": "",
+                                                "maxOccupancy": 1
+                                            }
+                                        ],
+                                        "freeCancellationTill": "",
+                                        "roomInfo": {
+                                            "mealInfo": {
+                                                "mealName": "",
+                                                "mealCode": ""
+                                            },
+                                            "hotelInfo": {
+                                                "hotelCode": "ACCO72918",
+                                                "hotelName": "Doubletree by Hilton Bristol",
+                                                "hotelRef": ""
+                                            },
+                                            "roomTypeInfo": {
+                                                "roomTypeCode": 9,
+                                                "roomCategoryCode": "",
+                                                "roomRef": "",
+                                                "roomTypeName": "En-Suite-Double",
+                                                "roomCategoryName": "",
+                                                "roomBookCode": 201905031583699
+                                            },
+                                            "ratePlanInfo": {
+                                                "ratePlanName": "",
+                                                "ratePlanRef": "",
+                                                "ratePlanCode": "6423909|6423909-6423909",
+                                                "bookingRef": ""
+                                            },
+                                            "availabilityStatus": "AvailableForSale",
+                                            "requestedRoomIndex": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "responseHeader": {
+                        "clientContext": {
+                            "pointOfSale": "Website",
+                            "clientID": "B2BCLIENT1213",
+                            "clientLanguage": "English",
+                            "clientType": "B2B",
+                            "clientMarket": "India",
+                            "clientCurrency": "INR"
+                        },
+                        "password": "",
+                        "sessionID": "19:04:26:15:42:51:104",
+                        "userID": "CLIENTUSER3355",
+                        "transactionID": "B2BB2BCLIENT1213190506124217254"
+                    }
+                },
+                "properties": [
+                    {
+                        "name": "requestHeader",
+                        "type": 2,
+                        "source": "3.response.responseHeader"
+                    },
+                    {
+                        "name": "requestBody.accommodationInfo",
+                        "type": 3,
+                        "funcArguments": {
+                            "total": 2,
+                            "args": [
+                                "3.request.requestBody",
+                                "3.response.responseBody.accommodationInfo"
+                            ]
+                        },
+                        "source": "prepareSearchreqBody"
+                    }
+                ]
+            }
+        ]
+    }
