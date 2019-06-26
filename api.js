@@ -65,6 +65,8 @@ function prepareRequest(item,parsedSource){
         }
         req = setValue(req, prop.name, value);
     });
+
+    return req;
 }
 
 function beforeRequest(item,parsedSource){
