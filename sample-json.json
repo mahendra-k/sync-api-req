@@ -3,14 +3,14 @@
         "items": [
             {
                 "id": 1,
-                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/searchSR",
+                "url": "http://UAT-APP-BE.travelogixx.net:8080/booking_engine/AccoService/v2.1/searchSR",
                 "method": "POST",
                 "params": [],
                 "request": {
                     "requestHeader": {
                         "clientContext": {
-                            "pointOfSale": "Website",
-                            "clientID": "B2BCLIENT1213",
+                            "pointOfSale": "API",
+                            "clientID": "B2BCLIENT511",
                             "clientLanguage": "English",
                             "clientType": "B2B",
                             "clientMarket": "India",
@@ -29,10 +29,14 @@
                         "countryCode": "US",
                         "cityCode": "USA-NWYR000",
                         "hotelCode": "",
-                        "checkIn": "2019-05-10",
-                        "checkOut": "2019-05-11",
+                        "checkIn": "2019-07-01",
+                        "checkOut": "2019-07-02",
                         "paxNationality": "US",
                         "roomConfig": [
+                            {
+                                "adultCount": 1,
+                                "childAges": []
+                            },
                             {
                                 "adultCount": 1,
                                 "childAges": []
@@ -157,19 +161,23 @@
                     }
                 },
                 "properties": [
-                    {
-                        "name": "requestBody.checkIn",
-                        "type": 1
+                    
+                ],
+                "afterResponse":{
+                    "name": "After Response",
+                    "type": 3,
+                    "funcArguments": {
+                        "total": 1,
+                        "args": [
+                            "1.response"                            
+                        ]
                     },
-                    {
-                        "name": "requestBody.checkOut",
-                        "type": 1
-                    }
-                ]
+                    "source": "searchAfterResponse"
+                }
             },
             {
                 "id": 2,
-                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/searchSR",
+                "url": "http://UAT-APP-BE.travelogixx.net:8080/booking_engine/AccoService/v2.1/priceSR",
                 "method": "POST",
                 "params": [],
                 "request": {
@@ -1201,7 +1209,7 @@
                         "name": "requestBody.accommodationInfo",
                         "type": 3,
                         "funcArguments": {
-                            "total": 2,
+                            "total": 3,
                             "args": [
                                 "1.request.requestBody",
                                 "1.response.responseBody.accommodationInfo"
@@ -1209,11 +1217,23 @@
                         },
                         "source": "priceReqBody"
                     }
-                ]
+                ],
+                "afterResponse":{
+                    "name": "After Response",
+                    "type": 3,
+                    "funcArguments": {
+                        "total": 1,
+                        "args": [
+                            "2.response"                            
+                        ]
+                    },
+                    "source": "priceAfterResponse"
+                }
+                
             },
             {
                 "id": 3,
-                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/repriceSR",
+                "url": "http://UAT-APP-BE.travelogixx.net:8080/booking_engine/AccoService/v2.1/repriceSR",
                 "method": "POST",
                 "params": [],
                 "request": {
@@ -1450,24 +1470,13 @@
                                 "2.response.responseBody.accommodationInfo"
                             ]
                         },
-                        "source": "priceReqBody"
+                        "source": "repriceReqBody"
                     }
-                ],
-                "afterResponse":{
-                    "name": "After Response",
-                    "type": 3,
-                    "funcArguments": {
-                        "total": 2,
-                        "args": [
-                            "4.response"                            
-                        ]
-                    },
-                    "source": "bookResponse"
-                }
+                ]                
             },
             {
                 "id": 4,
-                "url": "http://localhost:3000/booking_engine/AccoService/v2.1/bookSR",
+                "url": "http://UAT-APP-BE.travelogixx.net:8080/booking_engine/AccoService/v2.1/bookSR",
                 "method": "POST",
                 "params": [],
                 "request": {
@@ -1790,7 +1799,7 @@
                         "source": "3.response.responseHeader"
                     },
                     {
-                        "name": "requestBody.accommodationInfo",
+                        "name": "requestBody",
                         "type": 3,
                         "funcArguments": {
                             "total": 2,
@@ -1801,7 +1810,18 @@
                         },
                         "source": "prepareSearchreqBody"
                     }
-                ]
+                ],
+                "afterResponse":{
+                    "name": "After Response",
+                    "type": 3,
+                    "funcArguments": {
+                        "total": 1,
+                        "args": [
+                            "4.response"                            
+                        ]
+                    },
+                    "source": "afterBookResponse"
+                }
             }
         ]
     }

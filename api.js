@@ -25,31 +25,37 @@ function execute() {
                     break;
                 }
                 case 2: {
+                    var item=parsedSource.items.find(_=>{return _.id==prop.source.split('.')[0]});
                     value = getFuncValue(item, prop.source);
                     break;
                 }
                 case 3: {
                     var args = [];
-                    var funcArguments=prop.funcArguments;
-                    if(funcArguments.total == funcArguments.args.length){
-                        funcArguments.args.forEach(function(arg){
-                            var obj=parsedSource.items.find(_=>{return _.id==arg.split('.')[0]});
-                            args.push(getFuncValue(obj,arg)); 
-                        });                        
+                    var funcArguments = prop.funcArguments;
+                    funcArguments.args.forEach(function (arg) {
+                        var obj = parsedSource.items.find(_ => { return _.id == arg.split('.')[0] });
+                        args.push(getFuncValue(obj, arg));
+                    });
+                    for (i = funcArguments.args.length; i < funcArguments.total; i++) {
+                        var value = readInput(`Enter func arg ${i}`);
+                        args.push(value);
                     }
-                    console.log(service);
 
                     value = service[prop.source](...args);
-                    console.log("Value from function " + value);
+                    console.log("Value from function " + value + "\n");
                     break;
                 }
             }
             req = setValue(req, prop.name, value);
         });
+
+        console.log("================ Req =================");
         console.log(req);
+        console.log(JSON.stringify(req));
         item.request = req;        
         var apiRes=http(item.method,item.url,{
-            "headers": { "content-type": "application/json" }
+            headers: { "content-type": "application/json" },
+            json:item.request
         });
         var parsedRes=JSON.parse(apiRes.getBody('utf8'));               
         item.response=parsedRes; 
@@ -67,9 +73,7 @@ function execute() {
         }
         console.log(`Item ${item.id} Ended \n"`);
         console.log("=============================\n");
-    });
-
-    console.log();
+    });    
 }
 
 function readInput(question) {
@@ -97,6 +101,7 @@ function getFuncValue(source, prop) {
 }
 
 function setValue(source, prop, value) {
+    debugger;
     console.log("Set Value method callted for prop" + prop);
     var strs = prop.split(".");
     var req = source;
