@@ -163,7 +163,7 @@
                 "properties": [
                     
                 ],
-                "afterResponse":{
+                "afterRequest":{
                     "name": "After Response",
                     "type": 3,
                     "funcArguments": {
@@ -1218,7 +1218,7 @@
                         "source": "priceReqBody"
                     }
                 ],
-                "afterResponse":{
+                "afterRequest":{
                     "name": "After Response",
                     "type": 3,
                     "funcArguments": {
@@ -1811,7 +1811,7 @@
                         "source": "prepareSearchreqBody"
                     }
                 ],
-                "afterResponse":{
+                "afterRequest":{
                     "name": "After Response",
                     "type": 3,
                     "funcArguments": {

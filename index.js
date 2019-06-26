@@ -84,10 +84,11 @@ exports.afterBookResponse=function(response){
 
 exports.searchAfterResponse=function(res){
     console.log("Hotel codes");
+    var str="";
     res.responseBody.accommodationInfo.forEach(_=>{
-        console.log(_.roomStay[0].roomInfo.hotelInfo.hotelCode);
-        console.log("-----");
+        str= `${_.roomStay[0].roomInfo.hotelInfo.hotelCode} | `;        
     });
+    console.log(str);
 }
 
 exports.priceAfterResponse=function(res){
